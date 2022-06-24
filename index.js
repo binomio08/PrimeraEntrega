@@ -1,21 +1,45 @@
-//VARIABLES
-let luz = 3000
-let gas = 2500
-let arba = 1000
-let telefono =990
 
-//FUNCIONES
-function nombrecliente(){
-    alert("Bienvenido a Pago tus Cuentas")
-    let nombreCliente = prompt("Ingrese su Alias de Cliente")
-    if(nombreCliente === ""){
-        let nombreCliente = prompt("Ingrese su Alias de Cliente")
+alert("Bienvenid@s a\n**********************\nPAGO MIS CUENTAS\n**********************")
+
+let nombreUsuraio = prompt("Ingrese Nombre de usuario")
+
+function mostrarMenu(){
+    let opcion = parseInt(prompt("Hola "+nombreUsuraio+ " Seleccione un servio a pagar (ESC para Salir)\n 1)_EDESUR\n 2)_METROGAS\n 3)_AYSA\n 4)_ARBA"))
+
+    return(opcion)
+}
+
+function seleccion(){
+    let opcionSelecionada = mostrarMenu()
+    while(opcionSelecionada !== "ESC"){
+        if(!isNaN(opcionSelecionada)){
+            switch(opcionSelecionada){
+                case 1:
+                    alert("El total abonado a abonar es: $3000")
+                    break;
+                case 2:
+                    alert("EL total a abonar es: $2500")
+                    break;
+                case 3:
+                        alert("EL total a abonar es: $2600")
+                        break;
+                case 4:
+                        alert("EL total a abonar es: $1500")
+                        break;
+
+                default:
+                    alert("Opción incorrecta")
+                    break;
+            }
+            
+        }
+        else{
+            alert("Ingreso una letra")
+        }
+
+        opcionSelecionada = mostrarMenu()
+
     }
     
 }
-nombrecliente()
-function menu(){
-    let opcion = prompt("Bienvenido a PAGO MIS CUENTAS\n Seleccione que servicios quiere pagar (ESC) pasa salir: \n1. Luz\n2. Gas\n3. Arba\n4. Teléfono");
-
-}
-menu()
+seleccion()
