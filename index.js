@@ -48,4 +48,8 @@ function seleccion(){
 }
 
 }
+<<<<<<< HEAD
 seleccion()
+=======
+seleccion()
+>>>>>>> d232286472e9ef9e3b5413e879dae977d3973291
