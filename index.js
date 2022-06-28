@@ -49,5 +49,3 @@ function seleccion(){
 
 }
 seleccion()
-
-
